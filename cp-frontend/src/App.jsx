@@ -10,7 +10,6 @@ import Layout2 from "./pages/Layout2";
 function App() {
   return (
     <>
-      <h1>React Router Portaal + landing</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
