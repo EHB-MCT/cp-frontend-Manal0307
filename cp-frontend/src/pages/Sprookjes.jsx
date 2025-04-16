@@ -3,6 +3,7 @@ import SprookjeCard from "../components/SprookjesCard";
 
 function Sprookjes() {
   const [sprookjes, setSprookjes] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     fetch("/sprookjes.json")
@@ -16,11 +17,20 @@ function Sprookjes() {
   return (
     <div>
       <h1>Sprookjes van de klas</h1>
-
+      <div className="filters">
+        <input
+          type="text"
+          placeholder="Zoek op titel..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
       <div className="card-list">
-        {sprookjes.map((sprookje) => {
-          console.log(sprookje);
-          return (
+        {sprookjes
+          .filter((sprookje) =>
+            sprookje.title.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+          .map((sprookje) => (
             <SprookjeCard
               key={sprookje.id}
               title={sprookje.title}
@@ -29,8 +39,7 @@ function Sprookjes() {
               lastName={sprookje.lastName}
               link={sprookje.link}
             />
-          );
-        })}
+          ))}
       </div>
     </div>
   );
