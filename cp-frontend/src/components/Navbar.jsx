@@ -1,25 +1,40 @@
-import { Link } from "react-router-dom";
-import "./../app.css";
+import { NavLink } from "react-router-dom";
+import "./../App.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <ul className="navbar-list">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/sprookjes">Sprookjes</Link>
-        </li>
-        <li>
-          <Link to="/makingof">Makingof</Link>
-        </li>
-        <li>
-          <Link to="/parallax" target="_blank" rel="noopener noreferrer">
-            Parallax
-          </Link>
-        </li>
-      </ul>
+      <div className="navbar-container">
+        <img src="/logo.png" alt="Logo" className="navbar-logo" />
+
+        <ul className="navbar-list">
+          <li>
+            <NavLink to="/" className="nav-link">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/sprookjes" className="nav-link">
+              Sprookjes
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/makingof" className="nav-link">
+              Making Of
+            </NavLink>
+          </li>
+          <li>
+            <a
+              href="/parallax"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              Parallax
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

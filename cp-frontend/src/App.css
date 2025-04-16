@@ -3,8 +3,6 @@
   background-color: white;
   padding: 1.2rem 2rem;
   border-bottom: 1px solid #e0e0e0;
-  display: flex;
-  justify-content: center;
 }
 
 .navbar-list {
@@ -44,4 +42,113 @@
 .nav-link.active {
   color: black;
   font-weight: 600;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Filter */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Search bar */
+.filters input[type="text"] {
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: url("https://cdn-icons-png.flaticon.com/512/54/54481.png")
+    no-repeat 10px center;
+  background-size: 20px 20px;
+  width: 280px;
+}
+
+/* Filter dropdown */
+.filters select {
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: white;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23000' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 5.5l6 6 6-6h-12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+  width: 160px;
+}
+
+/* Card sprookjes */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.sprookje-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.sprookje-img {
+  height: 140px;
+  background-color: #eee;
+  width: 100%;
+}
+
+.sprookje-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sprookje-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.sprookje-info p {
+  margin: 0;
+}
+
+.sprookje-link {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.sprookje-link a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
 }
