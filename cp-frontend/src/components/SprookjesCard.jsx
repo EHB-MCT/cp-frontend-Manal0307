@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-function SprookjeCard({ id, title, genre, firstName, lastName, link }) {
+function SprookjeCard({ id, title, genre, firstName, lastName, link, image }) {
   return (
     <div className="sprookje-card">
-      <div className="card-image-placeholder" />
+      <img src={image} alt={title} className="sprookje-img" />
       <p>
         <strong>{title}</strong>
       </p>

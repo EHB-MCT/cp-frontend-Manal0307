@@ -42,6 +42,7 @@ function Sprookjes() {
             firstName={sprookje.firstName}
             lastName={sprookje.lastName}
             link={sprookje.link}
+            image={sprookje.image}
           />
         ))}
       </div>
