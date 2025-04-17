@@ -7,6 +7,7 @@ function Sprookjes() {
   const [sprookjes, setSprookjes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterGenre, setFilterGenre] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(8);
 
   useEffect(() => {
     fetch("/sprookjes.json")
@@ -33,7 +34,7 @@ function Sprookjes() {
       </div>
 
       <div className="card-list">
-        {filteredSprookjes.map((sprookje) => (
+        {filteredSprookjes.slice(0, visibleCount).map((sprookje) => (
           <SprookjeCard
             key={sprookje.id}
             id={sprookje.id}
