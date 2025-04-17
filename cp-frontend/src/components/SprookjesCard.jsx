@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function SprookjeCard({ title, genre, firstName, lastName, link }) {
+function SprookjeCard({ id, title, genre, firstName, lastName, link }) {
   return (
     <div className="sprookje-card">
       <div className="card-image-placeholder" />
@@ -21,7 +21,7 @@ function SprookjeCard({ title, genre, firstName, lastName, link }) {
       <br />
 
       {/* 👉 lien interne vers la page makingof */}
-      <Link to="/makingof">→ Behind the scenes</Link>
+      <Link to={`/makingof/${id}`}>→ Behind the scenes</Link>
     </div>
   );
 }

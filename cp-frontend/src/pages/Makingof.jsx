@@ -1,4 +1,24 @@
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 function Makingof() {
+  const { id } = useParams();
+  const [sprookje, setSprookje] = useState(null);
+
+  useEffect(() => {
+    fetch("/sprookjes.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const match = data.find((item) => item.id === parseInt(id));
+        setSprookje(match);
+      })
+      .catch((err) => console.error("Fout bij laden:", err));
+  }, [id]);
+
+  if (!sprookje) {
+    return <p>Project niet gevonden...</p>;
+  }
+
   return (
     <div className="makingof-container">
       <div className="makingof-header">
@@ -11,12 +31,12 @@ function Makingof() {
           <p>
             <strong>Project</strong>
             <br />
-            Sneeuwwitje
+            {sprookje.title}
           </p>
           <p>
             <strong>By</strong>
             <br />
-            Manal Boulahya
+            {sprookje.firstName} {sprookje.lastName}
           </p>
         </div>
       </div>
@@ -27,13 +47,8 @@ function Makingof() {
         </div>
         <div className="makingof-description">
           <h3>Beschrijving</h3>
-          <p>
-            Dit is mijn project over het sprookje van Sneeuwwitje. Ik heb het
-            verhaal herschreven en gevisualiseerd in een parallaxpagina. Hier
-            leg ik uit hoe ik mijn creatie heb opgebouwd en welke keuzes ik
-            gemaakt heb.
-          </p>
-          <a href="/parallax/manal" target="_blank" rel="noopener noreferrer">
+          <p>Beschrijving van het project komt hier...</p>
+          <a href={sprookje.link} target="_blank" rel="noopener noreferrer">
             → Bekijk het sprookje
           </a>
         </div>

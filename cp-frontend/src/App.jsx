@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="sprookjes" element={<Sprookjes />} />
-            <Route path="makingof" element={<Makingof />} />
+            <Route path="makingof/:id" element={<Makingof />} />
           </Route>
 
           <Route path="parallax" element={<Layout2 />}>

@@ -36,6 +36,7 @@ function Sprookjes() {
         {filteredSprookjes.map((sprookje) => (
           <SprookjeCard
             key={sprookje.id}
+            id={sprookje.id}
             title={sprookje.title}
             genre={sprookje.genre}
             firstName={sprookje.firstName}
