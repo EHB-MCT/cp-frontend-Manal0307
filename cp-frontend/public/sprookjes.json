@@ -6,7 +6,7 @@
     "lastName": "Vermeulen",
     "genre": "Adventure",
     "link": "/parallax/lina",
-    "image": "/images/test.jpg"
+    "image": "/images/test1.jpeg"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
     "lastName": "Benali",
     "genre": "Fantasy",
     "link": "/parallax/achraf",
-    "image": "/images/test.jpg"
+    "image": "/images/test1.jpeg"
   },
   {
     "id": 5,
