@@ -26,26 +26,9 @@ function Sprookjes() {
 
   return (
     <div>
-      <h1>Sprookjes van de klas</h1>
-
       <div className="filters">
         <SearchFilter onSearch={setSearchTerm} />
         <GenreFilter value={filterGenre} onChange={setFilterGenre} />
-      </div>
-
-      <div className="card-list">
-        {filteredSprookjes.slice(0, visibleCount).map((sprookje) => (
-          <SprookjeCard
-            key={sprookje.id}
-            id={sprookje.id}
-            title={sprookje.title}
-            genre={sprookje.genre}
-            firstName={sprookje.firstName}
-            lastName={sprookje.lastName}
-            link={sprookje.link}
-            image={sprookje.image}
-          />
-        ))}
       </div>
     </div>
   );
