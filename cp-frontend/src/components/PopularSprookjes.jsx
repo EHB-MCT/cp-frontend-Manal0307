@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SprookjesCard from "./SprookjesCard";
+import SprookjesCard2 from "./SprookjesCard2";
 
 function PopularSprookjes() {
   const [randomSprookjes, setRandomSprookjes] = useState([]);
@@ -18,7 +18,7 @@ function PopularSprookjes() {
       <h2 className="section-title">POPULAR</h2>
       <div className="popular-list">
         {randomSprookjes.map((s) => (
-          <SprookjesCard
+          <SprookjesCard2
             key={s.id}
             id={s.id}
             title={s.title}
