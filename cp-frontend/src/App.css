@@ -11,19 +11,18 @@ body {
   width: 220px;
   background-color: white;
   border-right: 1px solid #e0e0e0;
-
   flex-direction: column;
-  align-items: flex-start; /* 👈 important */
+  align-items: flex-start;
   z-index: 10;
   padding-top: 2rem;
   padding-left: 1.5rem;
-  padding-right: 0; /* 👈 important */
+  padding-right: 0;
 }
 
 .navbar-logo {
   height: 80px;
   margin-bottom: 2rem;
-  margin-left: 0.5rem; /* optionnel */
+  margin-left: 0.5rem;
 }
 
 .navbar-list {
@@ -194,6 +193,23 @@ body {
 /* -------------------------------------------------------------- */
 
 /* Style générique pour toutes les cartes */
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+
+.card-row a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.card-row a:hover {
+  text-decoration: underline;
+}
+
 .sprookje-wrapper {
   display: inline-block;
   width: 100%;
@@ -408,7 +424,6 @@ body {
 /*---------------------------------------------------*/
 
 .students-section {
-  padding: 3rem 2rem;
   max-width: 1200px;
   margin: auto;
 }
