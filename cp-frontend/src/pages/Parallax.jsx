@@ -13,7 +13,7 @@ function Parallax() {
       <section className="scene intro">
         <div className="background-layer"></div>
 
-        <img src="/images/man.png" alt="Vieil homme" className="man-walking" />
+        <img src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747128858/man_re6erv.png" alt="Vieil homme" className="man-walking" />
 
         <motion.div className="parallax-text" style={{ y: yText }}>
           Een oude bamboesnijder vindt een klein meisje in een stralende

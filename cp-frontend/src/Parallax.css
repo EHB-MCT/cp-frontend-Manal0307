@@ -46,7 +46,7 @@
 
 /* image de fond */
 .background-layer {
-  background-image: url("/images/intro.png");
+  background-image: url("https://res.cloudinary.com/deq5iutqv/image/upload/v1747129130/intro_mmvhay.png");
   background-repeat: no-repeat;
   background-position: center top;
   position: absolute;
