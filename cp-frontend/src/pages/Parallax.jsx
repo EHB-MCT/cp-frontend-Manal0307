@@ -13,7 +13,11 @@ function Parallax() {
       <section className="scene intro">
         <div className="background-layer"></div>
 
-        <img src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747128858/man_re6erv.png" alt="Vieil homme" className="man-walking" />
+        <img
+          src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747128858/man_re6erv.png"
+          alt="Vieil homme"
+          className="man-walking"
+        />
 
         <motion.div className="parallax-text" style={{ y: yText }}>
           Een oude bamboesnijder vindt een klein meisje in een stralende
@@ -21,6 +25,11 @@ function Parallax() {
           zijn vrouw.
         </motion.div>
       </section>
+      <img
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747128676/cld-sample-5.jpg"
+        alt="Vieil homme"
+        className="man-walking"
+      />
     </div>
   );
 }
