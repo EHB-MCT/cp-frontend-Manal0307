@@ -1,14 +1,14 @@
 import { Outlet, Link } from "react-router-dom";
+import "../Parallax.css";
 
 function Layout2() {
   return (
-    <>
-      <nav>
-        <ul>
-          <Link to="/">Home</Link>
-        </ul>
+    <div className="layout2">
+      <nav className="parallax-nav">
+        <Link to="/">Home</Link>
       </nav>
-    </>
+      <Outlet />
+    </div>
   );
 }
 
