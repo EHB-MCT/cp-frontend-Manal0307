@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 function SprookjeCard2({ id, title, genre, firstName, lastName, link, image }) {
   return (
     <div className="sprookje-card2">
-      <img src={image} alt={title} className="sprookje-img2" />
+      <img
+        src={import.meta.env.BASE_URL + image}
+        alt={title}
+        className="sprookje-img2"
+      />
 
       <div className="card-row">
         <strong>{title}</strong>

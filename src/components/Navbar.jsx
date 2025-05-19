@@ -31,15 +31,10 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <a
-              href="/parallax"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-link"
-            >
+            <NavLink to="/parallax" className="nav-link">
               <FaLayerGroup className="icon" />
               Parallax
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

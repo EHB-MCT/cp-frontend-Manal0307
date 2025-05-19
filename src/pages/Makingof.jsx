@@ -6,7 +6,7 @@ function Makingof() {
   const [sprookje, setSprookje] = useState(null);
 
   useEffect(() => {
-    fetch("/sprookjes.json")
+    fetch(`${import.meta.env.BASE_URL}sprookjes.json`)
       .then((res) => res.json())
       .then((data) => {
         const match = data.find((item) => item.id === parseInt(id));

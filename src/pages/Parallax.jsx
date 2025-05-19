@@ -25,11 +25,6 @@ function Parallax() {
           zijn vrouw.
         </motion.div>
       </section>
-      <img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747128676/cld-sample-5.jpg"
-        alt="Vieil homme"
-        className="man-walking"
-      />
     </div>
   );
 }
