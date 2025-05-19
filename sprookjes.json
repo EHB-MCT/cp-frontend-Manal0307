@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Alladin",
+    "firstName": "Lina",
+    "lastName": "Vermeulen",
+    "genre": "Adventure",
+    "link": "/parallax/lina",
+    "image": "/images/test1.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Roodkapje",
+    "firstName": "Yanis",
+    "lastName": "El Amrani",
+    "genre": "Classic",
+    "link": "/parallax/yanis",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Zeemeermin",
+    "firstName": "Emma",
+    "lastName": "Dubois",
+    "genre": "Fantasy",
+    "link": "/parallax/emma",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Reuzen",
+    "firstName": "Achraf",
+    "lastName": "Benali",
+    "genre": "Fantasy",
+    "link": "/parallax/achraf",
+    "image": "/images/test1.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "Biggetjes",
+    "firstName": "Amira",
+    "lastName": "Khan",
+    "genre": "Classic",
+    "link": "/parallax/amira",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Sneeuwwitje",
+    "firstName": "Manal",
+    "lastName": "Boulahya",
+    "genre": "Fantasy",
+    "link": "/parallax/manal",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Pyiee",
+    "firstName": "Ilias",
+    "lastName": "Bouazza",
+    "genre": "Sci-Fi",
+    "link": "/parallax/ilias",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Princes Kaguya",
+    "firstName": "Nao",
+    "lastName": "Tanaka",
+    "genre": "Legend",
+    "link": "/parallax/nao",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Nachtbloem",
+    "firstName": "Jade",
+    "lastName": "De Smet",
+    "genre": "Mystery",
+    "link": "/parallax/jade",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Robotkind",
+    "firstName": "Luca",
+    "lastName": "Vandenberghe",
+    "genre": "Sci-Fi",
+    "link": "/parallax/luca",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 11,
+    "title": "De Tijdwachter",
+    "firstName": "Maya",
+    "lastName": "Nguyen",
+    "genre": "Adventure",
+    "link": "/parallax/maya",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Het Droombos",
+    "firstName": "Yara",
+    "lastName": "Martens",
+    "genre": "Fantasy",
+    "link": "/parallax/yara",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 13,
+    "title": "De Onzichtbare Stad",
+    "firstName": "Tariq",
+    "lastName": "Zerouali",
+    "genre": "Legend",
+    "link": "/parallax/tariq",
+    "image": "/images/test.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Het Licht van Aurora",
+    "firstName": "Aurélie",
+    "lastName": "Lemoine",
+    "genre": "Fantasy",
+    "link": "/parallax/aurelie",
+    "image": "/images/test.jpg"
+  }
+]
