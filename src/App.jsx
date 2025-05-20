@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter basename="/cp-frontend-Manal0307/">
       <Routes>
-        {/* Toutes les pages avec la vraie navbar */}
+        {/* Toutes les pages avec le navbar */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="sprookjes" element={<Sprookjes />} />

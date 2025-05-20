@@ -7,6 +7,7 @@ function Sprookjes() {
   const [sprookjes, setSprookjes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterGenre, setFilterGenre] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(9); // 👈 D'abord 9
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}sprookjes.json?cb=${Date.now()}`)
@@ -22,7 +23,11 @@ function Sprookjes() {
     const matchGenre = filterGenre === "All" || sprookje.genre === filterGenre;
     return matchTitle && matchGenre;
   });
-  console.log("Sprookjes chargés ✅", filteredSprookjes);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 9); // 👈 Ajoute 9 de plus
+  };
+
   return (
     <div className="sprookjes-page">
       <div className="filters">
@@ -30,19 +35,25 @@ function Sprookjes() {
         <GenreFilter value={filterGenre} onChange={setFilterGenre} />
       </div>
 
-      {/* ✅ TITRE AU-DESSUS */}
       <h1 className="sprookjes-title">
         ALL <span>STUNNING</span> <br /> PROJECTS
       </h1>
 
-      {/* ✅ GRILLE DES CARTES */}
       <div className="card-list">
-        {filteredSprookjes.slice(0, 8).map((sprookje, i) => (
+        {filteredSprookjes.slice(0, visibleCount).map((sprookje, i) => (
           <div key={sprookje.id} className={`sprookje-wrapper card-${i + 1}`}>
             <SprookjeCard {...sprookje} />
           </div>
         ))}
       </div>
+
+      {visibleCount < filteredSprookjes.length && (
+        <div className="load-more-wrapper">
+          <button onClick={handleLoadMore} className="load-more-button">
+            Discover more projects
+          </button>
+        </div>
+      )}
     </div>
   );
 }

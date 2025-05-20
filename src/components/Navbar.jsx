@@ -15,7 +15,7 @@ function Navbar() {
           <li>
             <NavLink to="/" className="nav-link">
               <AiOutlineHome className="icon" />
-              About us
+              Home
             </NavLink>
           </li>
           <li>

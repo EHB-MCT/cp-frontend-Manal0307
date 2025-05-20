@@ -22,17 +22,20 @@ const students = [
   {
     firstName: "Eren",
     lastName: "Bashar",
-    image: "/images/students/eren.png",
+    image:
+      "https://res.cloudinary.com/deq5iutqv/image/upload/v1747745689/pp_k1tblp.jpg",
   },
   {
     firstName: "Soulaiman",
     lastName: "Saaidi",
-    image: "/images/students/soulaiman.png",
+    image:
+      "https://res.cloudinary.com/deq5iutqv/image/upload/v1747745689/pp_k1tblp.jpg",
   },
   {
     firstName: "Achraf",
     lastName: "Benali",
-    image: "/images/students/achraf.png",
+    image:
+      "https://res.cloudinary.com/deq5iutqv/image/upload/v1747745689/pp_k1tblp.jpg",
   },
 ];
 

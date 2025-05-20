@@ -20,7 +20,7 @@ function AboutSection() {
         flinke dosis creativiteit. Welkom in een wereld waar technologie en
         verbeelding samenkomen. Welkom in onze sprookjes.
       </p>
-      <a href="/sprookjes" className="about-button">
+      <a href="/cp-frontend-Manal0307/sprookjes" className="about-button">
         Discover all projects
       </a>
     </section>

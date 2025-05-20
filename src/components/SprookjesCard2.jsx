@@ -4,7 +4,7 @@ function SprookjeCard2({ id, title, genre, firstName, lastName, link, image }) {
   return (
     <div className="sprookje-card2">
       <img
-        src={import.meta.env.BASE_URL + image}
+        src={image} 
         alt={title}
         className="sprookje-img2"
       />

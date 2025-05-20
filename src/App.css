@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -131,7 +133,7 @@ body {
   background: url("https://cdn-icons-png.flaticon.com/512/54/54481.png")
     no-repeat 10px center;
   background-size: 20px 20px;
-  width: 280px;
+  width: 550px;
 }
 
 .filters select {
@@ -140,7 +142,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 12px;
-  width: 160px;
+  width: 180px;
 }
 /*------------------------------------------------------------------------*/
 
@@ -164,10 +166,10 @@ body {
 
 .sprookje-img {
   width: 100%;
-  height: auto;
-  border-radius: 0.8rem;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  display: block;
 }
 
 .sprookje-card p {
@@ -339,7 +341,7 @@ body {
 }
 
 .section h2 span {
-  color: #d22c2c;
+  color: #e51131;
 }
 
 .popular-cards,
@@ -375,7 +377,7 @@ body {
 }
 
 .section-title {
-  font-family: "Arial Black", sans-serif;
+  font-family: "Bungee", cursive;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
@@ -398,7 +400,7 @@ body {
 
 .about-section h2 {
   font-size: 2.2rem;
-  font-family: "Arial Black", sans-serif;
+  font-family: "Bungee", cursive;
   margin-bottom: 1rem;
 }
 
@@ -435,25 +437,24 @@ body {
 
 .students-section h2 {
   font-size: 2rem;
-  font-family: "Arial Black", sans-serif;
-  margin-bottom: 0.5rem;
+  font-family: "Bungee", cursive;
 }
 
 .students-section p {
   font-size: 1rem;
-  margin-bottom: 2rem;
   color: #555;
 }
 
 .student-grid {
   display: flex;
-  gap: 2rem;
+  gap: 22px;
   flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 .student-card {
   text-align: center;
-  max-width: 150px;
+  max-width: 170px;
 }
 
 .student-image {
@@ -476,43 +477,36 @@ body {
 
 .sprookjes-title {
   font-size: 3rem;
-  margin: 3rem 2rem 2rem 2rem;
-  font-family: "Bebas Neue", sans-serif;
+  margin: 3rem 3rem 2rem 6rem;
+  font-family: "Bungee", sans-serif;
 }
 
 .sprookjes-title span {
-  color: #d64045;
+  color: #e51131;
 }
 
 .card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  padding: 0 2rem;
+  padding: 0 6rem;
 }
-
-/* Positionnement personnalisé */
-.card-1 {
-  grid-column: 1 / 2;
+/*---------------------------------------------------*/
+.load-more-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  font-family: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 3rem auto;
+  display: block;
+  padding: 0;
 }
-.card-2 {
-  grid-column: 2 / 3;
+.load-more-button:hover {
+  opacity: 0.8;
 }
-.card-3 {
-  grid-column: 3 / 4;
+.load-more-wrapper {
+  text-align: center;
 }
-.card-4 {
-  grid-column: 1 / 2;
-}
-.card-5 {
-  grid-column: 2 / 3;
-}
-.card-6 {
-  grid-column: 3 / 4;
-}
-.card-7 {
-  grid-column: 1 / 2;
-}
-.card-8 {
-  grid-column: 2 / span 2;
-} /* carte horizontale */
