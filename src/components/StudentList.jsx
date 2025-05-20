@@ -4,17 +4,20 @@ const students = [
   {
     firstName: "Manal",
     lastName: "Boulahya",
-    image: "/images/students/manal.png",
+    image:
+      "https://res.cloudinary.com/deq5iutqv/image/upload/v1747745689/pp_k1tblp.jpg",
   },
   {
     firstName: "Sophia",
     lastName: "Rahmoun",
-    image: "/images/students/sophia.png",
+    image:
+      "https://res.cloudinary.com/deq5iutqv/image/upload/v1747745689/pp_k1tblp.jpg",
   },
   {
     firstName: "Beatrice",
     lastName: "Bokjo",
-    image: "/images/students/beatrice.png",
+    image:
+      "https://res.cloudinary.com/deq5iutqv/image/upload/v1747745689/pp_k1tblp.jpg",
   },
   {
     firstName: "Eren",
