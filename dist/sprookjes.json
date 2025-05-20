@@ -6,7 +6,7 @@
     "lastName": "Vermeulen",
     "genre": "Adventure",
     "link": "/parallax/lina",
-    "image": "/images/test1.jpeg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "lastName": "El Amrani",
     "genre": "Classic",
     "link": "/parallax/yanis",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "lastName": "Dubois",
     "genre": "Fantasy",
     "link": "/parallax/emma",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "lastName": "Benali",
     "genre": "Fantasy",
     "link": "/parallax/achraf",
-    "image": "/images/test1.jpeg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "lastName": "Khan",
     "genre": "Classic",
     "link": "/parallax/amira",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "lastName": "Boulahya",
     "genre": "Fantasy",
     "link": "/parallax/manal",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "lastName": "Bouazza",
     "genre": "Sci-Fi",
     "link": "/parallax/ilias",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "lastName": "Tanaka",
     "genre": "Legend",
     "link": "/parallax/nao",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "lastName": "De Smet",
     "genre": "Mystery",
     "link": "/parallax/jade",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "lastName": "Vandenberghe",
     "genre": "Sci-Fi",
     "link": "/parallax/luca",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "lastName": "Nguyen",
     "genre": "Adventure",
     "link": "/parallax/maya",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "lastName": "Martens",
     "genre": "Fantasy",
     "link": "/parallax/yara",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "lastName": "Zerouali",
     "genre": "Legend",
     "link": "/parallax/tariq",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   },
   {
     "id": 14,
@@ -123,6 +123,6 @@
     "lastName": "Lemoine",
     "genre": "Fantasy",
     "link": "/parallax/aurelie",
-    "image": "/images/test.jpg"
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
   }
 ]
