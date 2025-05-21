@@ -25,7 +25,7 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/makingof" className="nav-link">
+            <NavLink to="/makingof/1" className="nav-link">
               <FiPenTool className="icon" />
               Making Of
             </NavLink>

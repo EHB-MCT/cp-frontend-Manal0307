@@ -20,7 +20,7 @@
   margin: 0 !important;
 }
 
-/* Scène générale */
+/* Scène 1 générale */
 .scene {
   width: 100%;
   max-width: 100vw;
@@ -41,26 +41,23 @@
 
 /* --- SCÈNE 1 : intro avec background image --- */
 .intro {
-  height: 250vh; /* ou 150vh selon la hauteur de ton image */
+  height: 100vh; /* ou 150vh selon la hauteur de ton image */
 }
 
-/* image de fond */
-.background-layer {
-  background-image: url("https://res.cloudinary.com/deq5iutqv/image/upload/v1747129130/intro_mmvhay.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+.intro-background {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  z-index: 1;
+  height: 100vh;
+  object-fit: cover; /* ou "contain" si tu veux tout voir sans crop */
+  z-index: 0;
 }
 
 /* personnage animé */
 .man-walking {
   position: absolute;
-  top: 20%;
+  top: 21.5%;
   right: -100%;
   width: 74%;
   z-index: 2;
@@ -74,20 +71,35 @@
   }
 }
 
-.parallax-text {
-  position: absolute;
-  bottom: 15%;
+/* --- SCÈNE 2 : Évolution de Kaguya --- */
+.scene2 {
+  height: 300vh;
+  position: relative;
+}
+
+/* Arrière-plans de la scène 2 */
+.scene2 .bg1,
+.scene2 .bg2,
+.scene2 .bg3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Personnages de la scène 2 */
+.scene2 .char1,
+.scene2 .char2,
+.scene2 .char3 {
+  position: fixed;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
-  font-size: 1.5rem;
-  line-height: 1.8;
-  text-align: center;
-  color: white;
-  font-weight: 500;
-  z-index: 3;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  backdrop-filter: blur(4px);
+  height: 70vh;
+  z-index: 1;
+  pointer-events: none;
 }

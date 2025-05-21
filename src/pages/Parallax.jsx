@@ -1,30 +1,12 @@
 import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
 import "../Parallax.css";
+import Scene1 from "../components/Scene1";
+import Scene2 from "../components/Scene2";
 
 function Parallax() {
-  const { scrollY } = useScroll();
-
-  // Parallax effect for text
-  const yText = useTransform(scrollY, [0, 300], [0, -100]);
-
   return (
     <div className="parallax-container">
-      <section className="scene intro">
-        <div className="background-layer"></div>
-
-        <img
-          src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747128858/man_re6erv.png"
-          alt="Vieil homme"
-          className="man-walking"
-        />
-
-        <motion.div className="parallax-text" style={{ y: yText }}>
-          Een oude bamboesnijder vindt een klein meisje in een stralende
-          bamboestok. Hij neemt haar mee naar huis en adopteert haar samen met
-          zijn vrouw.
-        </motion.div>
-      </section>
+      <Scene1 />
     </div>
   );
 }

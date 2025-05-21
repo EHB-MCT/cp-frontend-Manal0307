@@ -23,8 +23,8 @@ function Makingof() {
     <div className="makingof-container">
       <div className="makingof-header">
         <img
-          src="https://via.placeholder.com/500x300"
-          alt="Project Visual"
+          src={sprookje.image}
+          alt={sprookje.title}
           className="makingof-image"
         />
         <div className="makingof-meta">
@@ -47,9 +47,14 @@ function Makingof() {
         </div>
         <div className="makingof-description">
           <h3>Beschrijving</h3>
-          <p>Beschrijving van het project komt hier...</p>
-          <a href={sprookje.link} target="_blank" rel="noopener noreferrer">
-            → Bekijk het sprookje
+          <p>{sprookje.description}</p>
+          <a
+            href={sprookje.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            Discover the project
           </a>
         </div>
       </div>
