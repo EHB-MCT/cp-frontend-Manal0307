@@ -1,4 +1,45 @@
-/* Navigation fixée en haut à droite */
+/* === STRUCTURE GÉNÉRALE === */
+
+.parallax-container {
+  height: 200vh; /* 100vh for Scene1 + 100vh for Scene2 */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scene {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scene 2 inside scene */
+.scene2-inner {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scene2-layer {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scene2-layer {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* === NAVIGATION FIXÉE === */
+
 .parallax-nav {
   position: fixed;
   top: 20px;
@@ -14,34 +55,18 @@
   color: white;
 }
 
-/* Supprime padding par défaut dans le layout2 */
+/* === CORRECTION POUR LAYOUT === */
+
 .layout2 {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* Scène 1 générale */
-.scene {
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  scroll-snap-align: start;
+/* === SCÈNE 1 === */
+
+.intro {
   height: 100vh;
   position: relative;
-}
-
-/* Conteneur principal */
-.parallax-container {
-  width: 100vw;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-/* --- SCÈNE 1 : intro avec background image --- */
-.intro {
-  height: 100vh; /* ou 150vh selon la hauteur de ton image */
 }
 
 .intro-background {
@@ -50,14 +75,13 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  object-fit: cover; /* ou "contain" si tu veux tout voir sans crop */
+  object-fit: cover; /* pour remplir sans déformation */
   z-index: 0;
 }
 
-/* personnage animé */
 .man-walking {
   position: absolute;
-  top: 21.5%;
+  bottom: -13%;
   right: -100%;
   width: 74%;
   z-index: 2;
@@ -71,35 +95,72 @@
   }
 }
 
-/* --- SCÈNE 2 : Évolution de Kaguya --- */
-.scene2 {
-  height: 300vh;
-  position: relative;
+.parallax-text {
+  position: absolute;
+  top: 20%; /* ✅ plus bas dans l'écran */
+  left: 100px; /* ✅ centré horizontalement */
+  transform: translateX(-30%);
+  width: 40%;
+  color: white;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  text-align: left;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateX(-10%) translateY(10px);
+  animation: fadeInCalm 3s ease-out forwards;
+  animation-delay: 0.6s;
 }
 
-/* Arrière-plans de la scène 2 */
-.scene2 .bg1,
-.scene2 .bg2,
-.scene2 .bg3 {
-  position: fixed;
+@keyframes fadeInCalm {
+  to {
+    opacity: 1;
+    transform: translateX(-10%) translateY(0);
+  }
+}
+/* Scene 2 inside scene */
+.scene2-inner {
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100vw;
   height: 100vh;
-  object-fit: cover;
-  z-index: 0;
-  pointer-events: none;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Personnages de la scène 2 */
-.scene2 .char1,
-.scene2 .char2,
-.scene2 .char3 {
-  position: fixed;
+.scene2-background,
+.scene2-character {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.scene2-character {
+  height: 70vh;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 70vh;
+  object-fit: contain;
   z-index: 1;
-  pointer-events: none;
+}
+
+.scene2-text {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 40%;
+  color: white;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  z-index: 10;
 }
