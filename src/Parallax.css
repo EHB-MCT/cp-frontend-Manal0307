@@ -1,7 +1,7 @@
 /* === STRUCTURE GÉNÉRALE === */
 
 .parallax-container {
-  height: 200vh; /* 100vh for Scene1 + 100vh for Scene2 */
+  height: 400vh; /* Scene1 (100vh) + Scene2 (100vh) + Scene3 (100vh) */
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -10,31 +10,6 @@
   height: 100vh;
   scroll-snap-align: start;
   position: relative;
-  overflow: hidden;
-}
-
-/* Scene 2 inside scene */
-.scene2-inner {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.scene2-layer {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.scene2-layer {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -75,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  object-fit: cover; /* pour remplir sans déformation */
+  object-fit: cover;
   z-index: 0;
 }
 
@@ -97,8 +72,8 @@
 
 .parallax-text {
   position: absolute;
-  top: 20%; /* ✅ plus bas dans l'écran */
-  left: 100px; /* ✅ centré horizontalement */
+  top: 20%;
+  left: 100px;
   transform: translateX(-30%);
   width: 40%;
   color: white;
@@ -111,7 +86,6 @@
   padding: 1.5rem 1rem;
   border-radius: 12px;
   opacity: 0;
-  transform: translateX(-10%) translateY(10px);
   animation: fadeInCalm 3s ease-out forwards;
   animation-delay: 0.6s;
 }
@@ -122,7 +96,15 @@
     transform: translateX(-10%) translateY(0);
   }
 }
-/* Scene 2 inside scene */
+
+/* === SCÈNE 2 === */
+
+.scene2 {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
 .scene2-inner {
   position: sticky;
   top: 0;
@@ -134,15 +116,16 @@
 .scene2-background,
 .scene2-character {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   transition: opacity 1.5s ease-in-out;
 }
 
 .scene2-character {
-  height: 70vh;
-  bottom: 0;
+  height: 80vh;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   object-fit: contain;
@@ -151,10 +134,10 @@
 
 .scene2-text {
   position: absolute;
-  top: 18%;
-  left: 30%;
+  top: 8%;
+  left: 23%;
   transform: translateX(-50%);
-  width: 40%;
+  width: 50%;
   color: white;
   font-family: "Patrick Hand", cursive;
   font-size: 1.2rem;
@@ -163,4 +146,110 @@
   padding: 1rem 2rem;
   border-radius: 12px;
   z-index: 10;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* === SCÈNE 3 === */
+
+.scene3 {
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.scene3-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.bamboo {
+  position: absolute;
+  height: 100vh;
+  bottom: 0;
+  z-index: 2;
+  will-change: transform;
+}
+
+.bamboo-far-right {
+  right: -35%;
+  bottom: 0;
+  position: absolute;
+  height: 100vh;
+  z-index: 2;
+}
+
+.princes {
+  position: absolute;
+  left: -7%;
+  transform: translateX(-50%);
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* === SCÈNE 4 === */
+.scene4-wrapper {
+  position: relative;
+  height: 40vh;
+  width: 40vw;
+  overflow: hidden;
+}
+.scene4 {
+  position: relative;
+  height: 110vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.scene4-bg-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene4-trophy {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.scene4-bg-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+  pointer-events: none;
+}
+.scene4-trophy {
+  width: 25vw;
+  left: 10%;
+  top: 30%;
+  position: absolute;
+  transform: rotate(-25deg) translateY(-50%);
+  z-index: 2;
+}
+
+.scene4-branch {
+  width: 70vw;
+  right: 0%;
+  top: 30%;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 2;
 }

@@ -6,7 +6,7 @@ function Scene2() {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"], // active pendant scroll sur 100vh
+    offset: ["start start", "end start"], // active pendant scroll sur 100vh
   });
 
   const babyOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
