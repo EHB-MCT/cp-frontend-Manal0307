@@ -125,9 +125,9 @@
 
 .scene2-character {
   height: 80vh;
-  top: 100px;
+  top: 60px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: rotate(-9deg) translateX(-50%);
   object-fit: contain;
   z-index: 1;
 }
