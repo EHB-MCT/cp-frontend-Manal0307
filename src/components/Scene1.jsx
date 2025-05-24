@@ -8,11 +8,18 @@ function Scene1() {
   return (
     <section className="scene intro">
       <img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/c_crop,w_1778,h_1000,ar_16:9/v1747839275/Untitled-1_ygi6ai.png"
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748032981/scene1_jwljgh.png"
         alt="background"
         className="intro-background"
       />
-      <div className="background-layer"></div>
+      <motion.h1
+        className="kaguya-title"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 1 }}
+        transition={{ duration: 1.2 }}
+      >
+        The Tale of Princess Kaguya
+      </motion.h1>
 
       <img
         src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747128858/man_re6erv.png"

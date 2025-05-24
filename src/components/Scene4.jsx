@@ -31,7 +31,7 @@ export default function Scene4() {
 
       {/* Couches sombres au-dessus */}
       <img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748003388/grot_clhi9y.png"
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748083019/grow_kdo9dn.png"
         alt="Couches sombres"
         className="scene4-bg-outer"
       />

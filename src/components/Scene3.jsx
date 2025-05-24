@@ -1,47 +1,67 @@
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Scene3() {
   return (
     <section className="scene scene3">
       <img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747862719/starback_ibk6pw.png"
-        alt="Starry background"
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748042075/S41_anllbg.png"
+        alt="Scène 3 fond"
         className="scene3-background"
       />
 
-      {/* Bamboo droite */}
+      {/* Main du prince à gauche */}
       <motion.img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747990245/palmtree3_nlynv1.png"
-        className="bamboo bamboo-right"
-        initial={{ x: "100vw", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 3, ease: "easeOut" }}
-      />
-      <motion.img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747989705/palmtree_pbi9oa.png"
-        className="bamboo bamboo-left"
-        initial={{ x: "100vw", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 3, ease: "easeOut" }}
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748042553/S41hand_yxlcbt.png"
+        alt="Main du prince"
+        className="scene3-hand"
+        animate={{ y: [0, -15, 0] }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
       />
 
       <motion.img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747989705/palmtree_pbi9oa.png"
-        className="bamboo bamboo-far-right"
-        initial={{ x: "15vw", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, ease: "easeIn" }}
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748042553/S4H_pimpvu.png"
+        alt="Tête de l’homme"
+        className="scene3-head"
+        animate={{ x: [0, -15, 0] }}
+        transition={{
+          duration: 2.5,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
       />
 
-      {/* Princes */}
       <motion.img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1747988000/prins5_rpsf1u.png"
-        className="princes"
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748042553/S4F_buox1m.png"
+        alt="Feuille droite"
+        className="scene3-leaf leaf-right"
+        style={{ rotate: 15 }}
+        animate={{
+          y: [0, -40, 0],
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 0.4,
+        }}
       />
+      <motion.div
+        className="scene3-text"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <p>
+          De prinsen trekken de wereld in op zoek naar mythische schatten om het
+          hart van Kaguya te winnen,maar falen stuk voor stuk. Hun beloften
+          waren bedrog.
+        </p>
+      </motion.div>
     </section>
   );
 }
