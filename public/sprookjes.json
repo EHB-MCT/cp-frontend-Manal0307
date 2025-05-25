@@ -1,130 +1,156 @@
 [
   {
     "id": 1,
-    "title": "The Tale of the Princess Kaguya ",
+    "title": "The Tale of the Princess Kaguya",
     "firstName": "Manal",
     "lastName": "Boulahya",
-    "genre": "Fantasy",
+    "genre": "fantasie",
     "link": "https://ehb-mct.github.io/cp-frontend-Manal0307/parallax",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747841386/cover_egxxh1.png",
     "video": "https://www.youtube.com/embed/ton_video_id",
-    "description": "The Tale of the Princess Kaguya tells the story of a tiny girl discovered inside a glowing bamboo stalk by an old bamboo cutter.b Raised with love, she grows into a beautiful young woman. Believing she is a divine princess, her adoptive father takes her to the capital to live a noble life. Despite wealth and high-status suitors, Kaguya longs for her simple childhood in the countryside. As her mysterious origins begin to unfold, she must confront her true identity and the sorrow of returning to where she truly belongs.."
+    "description": "The Tale of the Princess Kaguya tells the story of a tiny girl discovered inside a glowing bamboo stalk by an old bamboo cutter. Raised with love, she grows into a beautiful young woman. Believing she is a divine princess, her adoptive father takes her to the capital to live a noble life. Despite wealth and high-status suitors, Kaguya longs for her simple childhood in the countryside. As her mysterious origins begin to unfold, she must confront her true identity and the sorrow of returning to where she truly belongs."
   },
   {
     "id": 2,
-    "title": "Little Red Riding Hood",
-    "firstName": "Sophia",
-    "lastName": "Rahmoun",
-    "genre": "Fantasy",
-    "link": "https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748045/test1_m6vghh.jpg"
+    "title": "Alice in Wonderland",
+    "firstName": "Jordi",
+    "lastName": "De Leeuw",
+    "genre": "avontuur",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748118640/alicee_zr2bth.png",
+    "video": "",
+    "description": "Alice ziet een wit konijn voorbij rennen en besluit hem nieuwsgierig te volgen, recht de weide door. Zonder het te beseffen valt ze in een diepe put, en zo begint haar reis naar een wereld vol verwarring en verwondering. In een vreemde kamer vol deuren ontdekt ze magisch eten en drinken dat haar doet groeien en krimpen. Verderop belandt ze aan een chaotisch theefeest bij de Gekke Hoedenmaker, waar logica niet lijkt te bestaan. Maar de vrolijke waanzin slaat snel om, wanneer de dreiging van de Boze Koningin haar wereld binnendringt. Gelukkig was het allemaal maar een droom!"
   },
   {
     "id": 3,
-    "title": "Alice In Wonderland",
-    "firstName": "Jordi",
-    "lastName": "De Leeuw",
-    "genre": "Adventure",
-    "link": "https://ehb-mct.github.io/cp-frontend-JordiDeLeeuw/",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
-  },
-  {
-    "id": 4,
     "title": "Coraline",
     "firstName": "Pema",
     "lastName": "Bhutia",
-    "genre": "Horror",
-    "link": "https://ehb-mct.github.io/cp-frontend-PemaBhutia2005/",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "genre": "horror",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748118629/coraline_gthwd2.png",
+    "video": "",
+    "description": "Coraline verhuist naar een nieuw appartement met haar drukke ouders maar voelt zich verwaarloosd en verveeld. Terwijl ze haar omgeving verkent, ontdekt ze een mysterieuze deur die naar een alternatieve versie van haar huis leidt. In deze Andere Wereld lijkt alles levendiger en ontmoet ze haar Andere Moeder, die knoopogen heeft en haar een schijnbaar perfect leven biedt. Coraline beseft echter al snel dat de Andere Moeder sinistere bedoelingen heeft en haar voor altijd gevangen wil houden. Coraline is vastbesloten om te ontsnappen een weg terug te vinden naar haar eigen wereld."
+  },
+  {
+    "id": 4,
+    "title": "Roodkapje",
+    "firstName": "Sophia",
+    "lastName": "Rahmoun",
+    "genre": "fantasie",
+    "link": "https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/fairytale",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088607/roodkapje_npfqsl.png",
+    "video": "",
+    "description": "Little Red Riding Hood, fairy tale about a young girl who wears a red cloak and encounters a wolf on her way to visit her ailing grandmother. Depending on the version of the story, the girl is either eaten by the wolf or saved by a woodsman or hunter."
   },
   {
     "id": 5,
-    "title": "The Little Mermaid",
-    "firstName": "Rayan",
-    "lastName": "Arssi",
-    "genre": "Classic",
-    "link": "/parallax/amira",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748045/test1_m6vghh.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Aladin en de wonderlamp",
-    "firstName": "Younes ",
-    "lastName": "Ben Ali",
-    "genre": "Fantasy",
-    "link": "/parallax/manal",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
-  },
-  {
-    "id": 7,
     "title": "Blauwbaard",
     "firstName": "Wout",
     "lastName": "Van Impe",
-    "genre": "Horror",
-    "link": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/#/",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "genre": "horror",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088983/blauwbaard_srq9xt.png",
+    "video": "",
+    "description": "Blauwbaard is een duister sprookje vol mysterie en verboden geheimen. Het gaat over een rijk, maar zonderlinge edelman met een blauwe baard die al meerdere keren getrouwd is geweest, maar niemand weet wat er met zijn vorige vrouwen is gebeurd. Wanneer hij opnieuw trouwt, geeft hij zijn jonge bruid de sleutels van zijn kasteel, met één strikte regel: één kamertje mag ze nooit betreden. De verleiding blijkt te groot, en achter die verboden deur ontdekt ze een huiveringwekkend geheim… het lot van haar voorgangsters. Wanneer Blauwbaard haar daad ontdekt, dreigt ook zij zijn volgende slachtoffer te worden. Maar kan ze hem nog op tijd ontvluchten? "
   },
   {
-    "id": 8,
+    "id": 6,
     "title": "De wolf en de 3 biggetjes",
     "firstName": "Sam",
     "lastName": "Hoeterickx",
-    "genre": "Legend",
-    "link": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/#/",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748231/sp2_uuvaee.jpg"
+    "genre": "avontuur",
+    "link": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/#/fairy-tale",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088835/wolf3_plnwvy.png",
+    "video": "https://www.youtube.com/watch?v=Ngv0FRC6gqc",
+    "description": "De Wolf en de Drie Biggetjes” is een klassiek sprookje dat draait om drie kleine biggen die elk een eigen huisje bouwen om zich te beschermen tegen een gevaarlijke wolf. De eerste big bouwt een huis van stro, de tweede een huis van hout, en de derde een stevig huis van bakstenen. Wanneer de grote boze wolf verschijnt, probeert hij de biggen op te eten. Hij blaast het stro- en houten huis omver zonder moeite, waardoor de eerste twee biggen moeten vluchten naar het stenen huis van hun broer. Maar hoe hard de wolf ook blaast, het stenen huis blijft stevig staan. Uiteindelijk geeft de wolf op of wordt hij op slinkse wijze verslagen (afhankelijk van de versie). Het verhaal eindigt met de overwinning van slimheid, voorbereiding en hard werken over luiheid en gemakzucht."
+  },
+  {
+    "id": 7,
+    "title": "De kleine zeemeermin",
+    "firstName": "Rayan",
+    "lastName": "Arssi",
+    "genre": "fantasie",
+    "link": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088307/mermaid_pnvhdr.png",
+    "video": "",
+    "description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous  Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar."
+  },
+  {
+    "id": 8,
+    "title": "Aladin en de wonderlamp",
+    "firstName": "Younes",
+    "lastName": "Ben Ali",
+    "genre": "fantasie",
+    "link": "https://ehb-mct.github.io/cp-frontend-YounesEHB2023/Parallax",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088834/alladij_vnukmt.png",
+    "video": "",
+    "description": "Step into the bustling streets of Agrabah where Aladdin's adventure shimmers to life in layers of magic and mystery. Watch the wonderlamp glint in the distance as golden sands swirl around you, while Genies and magic carpets drift through the skies. As you scroll, the Cave of Wonders roars open its mouth, and jewels sparkle with hidden secrets about the world of front-end enchantment. With parallax scrolls and animated wonder, this tale isn't just told — it's lived."
   },
   {
     "id": 9,
-    "title": "De 3 biggetjes",
-    "firstName": "Ramon ",
-    "lastName": "De Raes",
-    "genre": "Mystery",
-    "link": "/parallax/jade",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "title": "Hans en Grietje",
+    "firstName": "Arno",
+    "lastName": "Baeck",
+    "genre": "avontuur",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088983/blauwbaard_srq9xt.png",
+    "video": "",
+    "description": "Step into the enchanted woods and discover the creative process behind my reimagining of the classic fairy tale..."
   },
   {
     "id": 10,
-    "title": "Keloglan",
-    "firstName": "Eren",
-    "lastName": "Sahbaz",
-    "genre": "Sci-Fi",
-    "link": "https://ehb-mct.github.io/cp-frontend-ErenSahbaz1/#/cp-frontend-ErenSahbaz1/parallax",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "title": "Hercules",
+    "firstName": "Rey",
+    "lastName": "Mammadbeyli",
+    "genre": "mythologie",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088607/hercules_uyez2h.png",
+    "video": "",
+    "description": "Hercules vertelt het verhaal van een jonge god die door Hades wordt ontvoerd en als sterveling leeft..."
   },
   {
     "id": 11,
-    "title": "De Tijdwachter",
-    "firstName": "Maya",
-    "lastName": "Nguyen",
-    "genre": "Adventure",
-    "link": "/parallax/maya",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "title": "De wolf en de 3 biggetjes",
+    "firstName": "Ramon",
+    "lastName": "De Raes",
+    "genre": "avontuur",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088306/3biggetjes_rgsv67.png",
+    "video": "",
+    "description": "Drie biggetjes bouwen elk een eigen huisje om zich te beschermen tegen de boze wolf..."
   },
   {
     "id": 12,
-    "title": "Het Droombos",
-    "firstName": "Yara",
-    "lastName": "Martens",
-    "genre": "Fantasy",
-    "link": "/parallax/yara",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "title": "Peter Pan",
+    "firstName": "Laura",
+    "lastName": "Ocampo",
+    "genre": "fantasie",
+    "link": "https://ehb-mct.github.io/cp-frontend-NinaBreedstraet/deWaternimfInDeVijver",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088307/peterpan_wp5ftx.png",
+    "video": "nDM499ppEWk",
+    "description": "Ga mee op een magische reis door Peter Pans wereld. Elke scroll onthult een nieuw avontuur..."
   },
   {
     "id": 13,
-    "title": "De Onzichtbare Stad",
-    "firstName": "Tariq",
-    "lastName": "Zerouali",
-    "genre": "Legend",
-    "link": "/parallax/tariq",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "title": "De raaf en de vos",
+    "firstName": "Matteo",
+    "lastName": "Giambarresi",
+    "genre": "dierenverhaal",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748121242/raff_grnoac.png",
+    "video": "",
+    "description": "Een ijdele raaf laat zich vangen door de vleierij van een sluwe vos en verliest zijn kaas..."
   },
   {
     "id": 14,
-    "title": "Het Licht van Aurora",
-    "firstName": "Aurélie",
-    "lastName": "Lemoine",
-    "genre": "Fantasy",
-    "link": "/parallax/aurelie",
-    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747748163/sp1_ghz7rc.jpg"
+    "title": "Belle en het Beest",
+    "firstName": "Nordine",
+    "lastName": "El Ouafrasi",
+    "genre": "romantiek",
+    "link": "",
+    "image": "https://res.cloudinary.com/deq5iutqv/image/upload/v1748088307/bellebeest_yampmb.png",
+    "video": "",
+    "description": "N/A"
   }
 ]

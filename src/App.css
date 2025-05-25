@@ -226,6 +226,7 @@ body {
   background: #ffffff;
   border-radius: 1rem;
   transition: transform 0.2s ease;
+  width: 450px;
 }
 
 .sprookje-card:hover {
@@ -479,7 +480,7 @@ body {
 
 .sprookjes-title {
   font-size: 3rem;
-  margin: 3rem 3rem 2rem 6rem;
+  margin: 3rem 3rem 0 6rem;
   font-family: "Bungee", sans-serif;
 }
 
@@ -491,7 +492,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  padding: 0 6rem;
+  padding: 1rem 6rem;
 }
 /*---------------------------------------------------*/
 .load-more-button {

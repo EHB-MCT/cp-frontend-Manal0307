@@ -9,7 +9,7 @@ export default function Scene5() {
     offset: ["start end", "end start"],
   });
 
-  const kaguyaY = useTransform(scrollYProgress, [0, 1], ["-10%", "150%"]);
+  const kaguyaY = useTransform(scrollYProgress, [0, 1], ["-30%", "110%"]);
   const kaguyaX = useTransform(
     scrollYProgress,
     [0, 0.25, 0.5, 0.75, 1],
