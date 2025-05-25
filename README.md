@@ -4,9 +4,15 @@ Princess Kaguya is een artistiek en interactief webproject gebaseerd op het klas
 
 Via een parallax scroll-ervaring volg je haar reis door verschillende fases van haar leven: haar ontdekking, haar snelle groei, haar verdrietige geheim en het hartverscheurende afscheid.
 
-## Expanding the ESLint configuration
+## Library that I used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Framer-Motion] – voor animaties zoals fades, parallax-effecten en overgangseffecten (bijvoorbeeld de maan, bladeren).
+
+[react-just-parallax] – voor de muis-gebaseerde parallax effecten (zoals bij de trofee en sceptre in de grot).
+
+[Motion-One],[https://ui.indie-starter.dev/docs/text-animation] – Voor geavanceerde tekstanimaties
+
+## Expanding the ESLint configuration
 
 ## Sources
 
@@ -20,3 +26,4 @@ If you are developing a production application, we recommend using TypeScript an
 https://motion.dev/docs/react-animation - basic animations
 
 [https://react-just-parallax.michalzalobny.com/] - Mouse / Touch Parallax parallax gebruikt om objecten te bewegen ( Scene4.jsx)
+[https://chatgpt.com/share/6832f62a-679c-8008-80b9-3ae7941447ee] - De legendarische objecten (trofee en staf) mochten pas verschijnen wanneer de muis beweegt binnen de scène. Probleem opgelost waarbij ze te vroeg zichtbaar waren (al vanaf de vorige scène) door een systeem toe te voegen dat scroll detecteert (useInView) én muisbewegingen (onMouseMove).

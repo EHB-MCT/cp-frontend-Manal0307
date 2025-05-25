@@ -1,34 +1,28 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 export default function Scene6() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5, once: true });
-  const [showFullMoon, setShowFullMoon] = useState(false);
+  const section = useRef(null);
+  const isInView = useInView(section, { amount: 0.5, once: true });
+  const [showMoon, setShowMoon] = useState(false);
 
   useEffect(() => {
     if (isInView) {
-      const timeout = setTimeout(() => setShowFullMoon(true), 1500);
-      return () => clearTimeout(timeout);
+      const timer = setTimeout(() => setShowMoon(true), 1500);
+      return () => clearTimeout(timer);
     }
   }, [isInView]);
 
-  const leaves = Array.from({ length: 8 });
-
   return (
-    <section className="scene scene6" ref={ref}>
-      {/* Background */}
+    <section className="scene scene6" ref={section}>
       <img
-        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748158481/KAG_noaxam.png"
+        src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748212736/scen6_hperio.png"
         className="scene6-background"
-        alt="background"
       />
 
-      {/* Lune complète */}
-      {showFullMoon && (
+      {showMoon && (
         <motion.img
           src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748125842/moon_gfhn6h.png"
-          alt="lune pleine"
           className="moon"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -36,7 +30,6 @@ export default function Scene6() {
         />
       )}
 
-      {/* Texte narratif */}
       {isInView && (
         <motion.p
           className="scene6-text"
@@ -50,14 +43,12 @@ export default function Scene6() {
         </motion.p>
       )}
 
-      {/* Feuilles tombantes */}
       {isInView &&
-        leaves.map((_, i) => (
+        Array.from({ length: 8 }).map((_, i) => (
           <motion.img
             key={i}
             src="https://res.cloudinary.com/deq5iutqv/image/upload/v1748125911/feuille_vuq1dh.png"
             className="leaf"
-            alt="leaf"
             initial={{
               y: -100,
               x: Math.random() * window.innerWidth,
