@@ -7,10 +7,10 @@ function Sprookjes() {
   const [sprookjes, setSprookjes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterGenre, setFilterGenre] = useState("All");
-  const [visibleCount, setVisibleCount] = useState(9); // 👈 D'abord 9
+  const [visibleCount, setVisibleCount] = useState(9);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}sprookjes.json?cb=${Date.now()}`)
+    fetch(`${import.meta.env.BASE_URL}sprookjes.json?cb=${Date.now()}`) //cache buster --> build deploy 
       .then((res) => res.json())
       .then((data) => setSprookjes(data))
       .catch((err) => console.error("Fout bij laden:", err));
@@ -25,7 +25,7 @@ function Sprookjes() {
   });
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 9); // 👈 Ajoute 9 de plus
+    setVisibleCount((prev) => prev + 9); // Ajoute 9 de plus
   };
 
   return (
@@ -42,7 +42,7 @@ function Sprookjes() {
       <div className="card-list">
         {filteredSprookjes.slice(0, visibleCount).map((sprookje, i) => (
           <div key={sprookje.id} className={`sprookje-wrapper card-${i + 1}`}>
-            <SprookjeCard {...sprookje} />
+            <SprookjeCard {...sprookje} /> 
           </div>
         ))}
       </div>

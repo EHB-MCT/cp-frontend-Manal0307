@@ -11,14 +11,14 @@ function SprookjeCard({ id, title, genre, firstName, lastName, link, image }) {
         {firstName} {lastName}
       </p>
 
-      {/* 👉 link sprookje */}
+      {/* link sprookje */}
       <a href={link} target="_blank" rel="noopener noreferrer">
         → View story
       </a>
 
       <br />
 
-      {/* 👉 link makingof */}
+      {/* link makingof */}
       <Link to={`/makingof/${id}`}>→ Behind the scenes</Link>
     </div>
   );

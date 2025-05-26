@@ -9,7 +9,7 @@ export default function Scene5() {
     offset: ["start end", "end start"],
   });
 
-  const kaguyaY = useTransform(scrollYProgress, [0, 1], ["-30%", "110%"]);
+  const kaguyaY = useTransform(scrollYProgress, [0, 1], ["-30%", "110%"]); // beneden-boven
   const kaguyaX = useTransform(
     scrollYProgress,
     [0, 0.25, 0.5, 0.75, 1],
@@ -19,9 +19,9 @@ export default function Scene5() {
     scrollYProgress,
     [0, 0.5, 1],
     ["-5deg", "5deg", "-5deg"]
-  );
+  ); // link /rechts
 
-  // Apparition main
+  // Hand
   const handOpacity = useTransform(scrollYProgress, [0.6, 1], [0, 1]);
   const handY = useTransform(scrollYProgress, [0.6, 1], ["20%", "0%"]);
 

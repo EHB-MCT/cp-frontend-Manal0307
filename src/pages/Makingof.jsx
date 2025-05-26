@@ -43,7 +43,18 @@ function Makingof() {
 
       <div className="makingof-body">
         <div className="makingof-video">
-          <div className="video-placeholder">▶</div>
+          {sprookje.video ? (
+            <iframe
+              src={`https://www.youtube.com/embed/${sprookje.video}`}
+              title={`Video van ${sprookje.firstName}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="makingof-iframe"
+            ></iframe>
+          ) : (
+            <p>Geen video beschikbaar</p>
+          )}
         </div>
         <div className="makingof-description">
           <h3>Beschrijving</h3>

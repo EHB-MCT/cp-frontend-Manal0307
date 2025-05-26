@@ -328,8 +328,16 @@ body {
   display: inline-block;
   margin-top: 1rem;
   font-weight: 500;
+  text-decoration: underline;
 }
 
+.makingof-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
 /*-------------------------- home pagina ---------------------------------------------*/
 
 .home-container {
